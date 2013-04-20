@@ -1,0 +1,23 @@
+{
+	"name": "sweetp-base",
+	"description": "Base module to write services for Sweetp server to automate your development workflow.",
+	"author": {
+		"name":"Stefan Gojan",
+		"email":"vollekannehoschi@gmail.com"
+	},
+    "repository":{
+        "type":"git",
+        "url":""
+    },
+    "keywords":[
+		"abstract",
+		"sweetp",
+		"utility"
+    ],
+    "licence":"MIT",
+	"version": "1.0.0",
+	"main":"./lib/sweetp",
+	"dependencies": {
+	},
+	"engines": { "node": "~0.8.14"}
+}
