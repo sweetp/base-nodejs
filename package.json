@@ -10,12 +10,11 @@
         "url":""
     },
     "keywords":[
-		"abstract",
 		"sweetp",
 		"utility"
     ],
     "licence":"MIT",
-	"version": "1.0.0",
+	"version": "0.6.0",
 	"main":"./lib/sweetp",
 	"dependencies": {
 		"lodash":"~1.0.1"
