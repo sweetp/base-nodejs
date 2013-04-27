@@ -14,7 +14,7 @@
 		"utility"
     ],
     "licence":"MIT",
-	"version": "0.6.0",
+	"version": "0.6.1",
 	"main":"./lib/sweetp",
 	"dependencies": {
 		"lodash":"~1.0.1"
