@@ -13,7 +13,7 @@ Features:
 
     var service, methods, client, sweetp;
 
-    sweetp = require('sweetp');
+    sweetp = require('sweetp-base');
 
     // service methods with sweetp meta data
     service = {
