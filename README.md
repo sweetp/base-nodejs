@@ -1,5 +1,7 @@
 # Base package for Sweetp services developed with node.js
 
+[![NPM version](https://badge.fury.io/js/sweetp-base.png)](http://badge.fury.io/js/sweetp-base)
+
 Features:
 
 * simple DSL to define service methods easily
