@@ -9,8 +9,11 @@ Features:
 * simple DSL to define service methods easily
 * asynchronous callback API like node.js packages
 * wire protocol abstracted for you, again, so you can write new services easily
+* call other services
 
-# Example
+# Examples
+
+## Service creation
 
 
     var service, methods, client, sweetp;
@@ -69,7 +72,27 @@ Put this in a file like `/somedir/foo.js`. Add this to your Sweetp `services.jso
 
 Now (re-)start Sweetp server and you should be able to call your example service with `http://localhost:7777/services/yourService/yourMethod` :-)
 
-## Parameter types
+
+## Call other service
+
+Calling an other service is easy. Fetch the url of the Sweetp server your
+service is running with parameter type `sweetp.PARAMETER_TYPES.url`. Add
+parameters for the service call as simple map and put in the other parameters:
+
+    var callback = function (err, result) {
+        console.log('result from service call', result);
+    };
+    var params = {
+        title:'This is my title',
+        message:'This is my message'
+    };
+    sweetp.callService(url, "noproject", "ui/dialog/password", params, false, callback);
+
+This would call the service "ui/dialog/password" of project "noproject", which
+runs in the same Sweetp server instance as your service. As result you going to
+get the answer of the called service.
+
+# Parameter types
 
 See [JVM version](https://github.com/sweetp/base-groovy/blob/master/src/main/groovy/org/hoschi/sweetp/services/base/ServiceParameter.groovy) for more details.
 
