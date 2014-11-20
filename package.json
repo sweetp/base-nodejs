@@ -1,23 +1,26 @@
 {
-	"name": "sweetp-base",
-	"description": "Base module to write services for Sweetp server to automate your development workflow.",
-	"author": {
-		"name":"Stefan Gojan",
-		"email":"vollekannehoschi@gmail.com"
-	},
-    "repository":{
-        "type":"git",
-        "url":"https://github.com/sweetp/base-nodejs"
-    },
-    "keywords":[
-		"sweetp",
-		"utility"
-    ],
-    "licence":"MIT",
-	"version": "0.6.3",
-	"main":"./lib/sweetp",
-	"dependencies": {
-		"lodash":"~1.0.1"
-	},
-	"engines": { "node": "~0.8.14"}
+  "name": "sweetp-base",
+  "description": "Base module to write services for Sweetp server to automate your development workflow.",
+  "author": {
+    "name": "Stefan Gojan",
+    "email": "vollekannehoschi@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sweetp/base-nodejs"
+  },
+  "keywords": [
+    "sweetp",
+    "utility"
+  ],
+  "licence": "MIT",
+  "version": "0.7.0",
+  "main": "./lib/sweetp",
+  "dependencies": {
+    "lodash": "~1.0.1",
+    "jayson": "~1.1.2"
+  },
+  "engines": {
+    "node": "~0.10.17"
+  }
 }
