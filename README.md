@@ -16,8 +16,9 @@ Features:
 ## Service creation
 
 
-    var service, methods, client, sweetp;
+    var service, methods, client, sweetp, log;
 
+    log = require('sweetp-base/lib/log')('YOUR SERVICE NAME:internal:');
     sweetp = require('sweetp-base');
 
     // service methods with sweetp meta data
@@ -44,10 +45,13 @@ Features:
                 }
             },
             // assign a function to the "fn" property, this gets executed when the service method gets called
-            fn:function(err, params, callback) {
-                if (err) return callback(err);
-
+            fn:function(params, callback) {
                 // create unicorns here or any other fancy stuff which makes you more productive
+
+                log.debug("Search for unicorns.");
+                log.info("I create beautiful unicorns.");
+                log.warn("uh oh, no unicorns??");
+                log.error("No unicorns!!!! :(");
 
                 return callback(null, "This is your response and can be a String or JSON.");
             }

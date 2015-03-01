@@ -18,7 +18,8 @@
   "main": "./lib/sweetp",
   "dependencies": {
     "lodash": "~1.0.1",
-    "jayson": "~1.1.2"
+    "jayson": "~1.1.2",
+    "debug": "~2.1.0"
   },
   "engines": {
     "node": "~0.10.17"
